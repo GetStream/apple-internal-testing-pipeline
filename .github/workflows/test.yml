@@ -1,0 +1,45 @@
+name: Test
+
+on:
+  schedule:
+    # Runs "At 04:00 every night"
+    - cron: '0 4 * * *'
+
+  pull_request:
+
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  integration:
+    name: Integration
+    strategy:
+      matrix:
+        include:
+          - project: 'TestFrameworks'
+          - project: 'TestPods'
+          - project: 'TestXCFrameworks'
+          - project: 'TestXCPods'
+      fail-fast: false
+    runs-on: macos-14
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+    - uses: actions/checkout@v4.1.1
+    - uses: ./.github/actions/ruby-cache
+    - name: Test Integration of Stream ${{ matrix.project }}
+      run: bundle exec fastlane test project:"${{ matrix.project }}"
+      timeout-minutes: 30
+    - uses: 8398a7/action-slack@v3
+      with:
+        status: ${{ job.status }}
+        text: "You shall not pass!"
+        job_name: "${{ github.workflow }}: ${{ github.job }}"
+        fields: message,commit,author,action,workflow,job,took
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        MATRIX_CONTEXT: ${{ toJson(matrix) }}
+      if: failure()

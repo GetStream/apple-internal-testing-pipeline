@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82765F4D2C47CB4500A2B0FD /* TestXCFrameworksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82765F4C2C47CB4500A2B0FD /* TestXCFrameworksApp.swift */; };
+		82765F4F2C47CB4500A2B0FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82765F4E2C47CB4500A2B0FD /* ContentView.swift */; };
+		82765F512C47CB4700A2B0FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82765F502C47CB4700A2B0FD /* Assets.xcassets */; };
+		82765F542C47CB4700A2B0FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82765F532C47CB4700A2B0FD /* Preview Assets.xcassets */; };
+		82765F5C2C47CCD600A2B0FD /* StreamChat in Frameworks */ = {isa = PBXBuildFile; productRef = 82765F5B2C47CCD600A2B0FD /* StreamChat */; };
+		82765F5E2C47CCD600A2B0FD /* StreamChatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 82765F5D2C47CCD600A2B0FD /* StreamChatUI */; };
+		82765F632C47D08200A2B0FD /* StreamVideo in Frameworks */ = {isa = PBXBuildFile; productRef = 82765F622C47D08200A2B0FD /* StreamVideo */; };
+		82765F652C47D08200A2B0FD /* StreamVideoSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 82765F642C47D08200A2B0FD /* StreamVideoSwiftUI */; };
+		82765F672C47D08200A2B0FD /* StreamVideoUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 82765F662C47D08200A2B0FD /* StreamVideoUIKit */; };
+		827BED8D2C47D0D800BE90CE /* StreamChatSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 827BED8C2C47D0D800BE90CE /* StreamChatSwiftUI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		82765F492C47CB4500A2B0FD /* TestXCFrameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestXCFrameworks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82765F4C2C47CB4500A2B0FD /* TestXCFrameworksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestXCFrameworksApp.swift; sourceTree = "<group>"; };
+		82765F4E2C47CB4500A2B0FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		82765F502C47CB4700A2B0FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82765F532C47CB4700A2B0FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82765F462C47CB4500A2B0FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				827BED8D2C47D0D800BE90CE /* StreamChatSwiftUI in Frameworks */,
+				82765F652C47D08200A2B0FD /* StreamVideoSwiftUI in Frameworks */,
+				82765F632C47D08200A2B0FD /* StreamVideo in Frameworks */,
+				82765F5E2C47CCD600A2B0FD /* StreamChatUI in Frameworks */,
+				82765F672C47D08200A2B0FD /* StreamVideoUIKit in Frameworks */,
+				82765F5C2C47CCD600A2B0FD /* StreamChat in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82765F402C47CB4500A2B0FD = {
+			isa = PBXGroup;
+			children = (
+				82765F4B2C47CB4500A2B0FD /* TestXCFrameworks */,
+				82765F4A2C47CB4500A2B0FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82765F4A2C47CB4500A2B0FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82765F492C47CB4500A2B0FD /* TestXCFrameworks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82765F4B2C47CB4500A2B0FD /* TestXCFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82765F4C2C47CB4500A2B0FD /* TestXCFrameworksApp.swift */,
+				82765F4E2C47CB4500A2B0FD /* ContentView.swift */,
+				82765F502C47CB4700A2B0FD /* Assets.xcassets */,
+				82765F522C47CB4700A2B0FD /* Preview Content */,
+			);
+			path = TestXCFrameworks;
+			sourceTree = "<group>";
+		};
+		82765F522C47CB4700A2B0FD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				82765F532C47CB4700A2B0FD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82765F482C47CB4500A2B0FD /* TestXCFrameworks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82765F572C47CB4700A2B0FD /* Build configuration list for PBXNativeTarget "TestXCFrameworks" */;
+			buildPhases = (
+				82765F452C47CB4500A2B0FD /* Sources */,
+				82765F462C47CB4500A2B0FD /* Frameworks */,
+				82765F472C47CB4500A2B0FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestXCFrameworks;
+			packageProductDependencies = (
+				82765F5B2C47CCD600A2B0FD /* StreamChat */,
+				82765F5D2C47CCD600A2B0FD /* StreamChatUI */,
+				82765F622C47D08200A2B0FD /* StreamVideo */,
+				82765F642C47D08200A2B0FD /* StreamVideoSwiftUI */,
+				82765F662C47D08200A2B0FD /* StreamVideoUIKit */,
+				827BED8C2C47D0D800BE90CE /* StreamChatSwiftUI */,
+			);
+			productName = TestXCFrameworks;
+			productReference = 82765F492C47CB4500A2B0FD /* TestXCFrameworks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82765F412C47CB4500A2B0FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					82765F482C47CB4500A2B0FD = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 82765F442C47CB4500A2B0FD /* Build configuration list for PBXProject "TestXCFrameworks" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82765F402C47CB4500A2B0FD;
+			packageReferences = (
+				82765F5A2C47CCD600A2B0FD /* XCRemoteSwiftPackageReference "stream-chat-swift-spm" */,
+				82765F612C47D08200A2B0FD /* XCRemoteSwiftPackageReference "stream-video-swift-spm" */,
+				827BED8B2C47D0D800BE90CE /* XCRemoteSwiftPackageReference "stream-chat-swiftui-spm" */,
+			);
+			productRefGroup = 82765F4A2C47CB4500A2B0FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82765F482C47CB4500A2B0FD /* TestXCFrameworks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82765F472C47CB4500A2B0FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82765F542C47CB4700A2B0FD /* Preview Assets.xcassets in Resources */,
+				82765F512C47CB4700A2B0FD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82765F452C47CB4500A2B0FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82765F4F2C47CB4500A2B0FD /* ContentView.swift in Sources */,
+				82765F4D2C47CB4500A2B0FD /* TestXCFrameworksApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		82765F552C47CB4700A2B0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82765F562C47CB4700A2B0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82765F582C47CB4700A2B0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TestXCFrameworks/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.getstream.TestXCFrameworks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82765F592C47CB4700A2B0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TestXCFrameworks/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.getstream.TestXCFrameworks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82765F442C47CB4500A2B0FD /* Build configuration list for PBXProject "TestXCFrameworks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82765F552C47CB4700A2B0FD /* Debug */,
+				82765F562C47CB4700A2B0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82765F572C47CB4700A2B0FD /* Build configuration list for PBXNativeTarget "TestXCFrameworks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82765F582C47CB4700A2B0FD /* Debug */,
+				82765F592C47CB4700A2B0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		82765F5A2C47CCD600A2B0FD /* XCRemoteSwiftPackageReference "stream-chat-swift-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/stream-chat-swift-spm";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		82765F612C47D08200A2B0FD /* XCRemoteSwiftPackageReference "stream-video-swift-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/stream-video-swift-spm";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		827BED8B2C47D0D800BE90CE /* XCRemoteSwiftPackageReference "stream-chat-swiftui-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/stream-chat-swiftui-spm";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		82765F5B2C47CCD600A2B0FD /* StreamChat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82765F5A2C47CCD600A2B0FD /* XCRemoteSwiftPackageReference "stream-chat-swift-spm" */;
+			productName = StreamChat;
+		};
+		82765F5D2C47CCD600A2B0FD /* StreamChatUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82765F5A2C47CCD600A2B0FD /* XCRemoteSwiftPackageReference "stream-chat-swift-spm" */;
+			productName = StreamChatUI;
+		};
+		82765F622C47D08200A2B0FD /* StreamVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82765F612C47D08200A2B0FD /* XCRemoteSwiftPackageReference "stream-video-swift-spm" */;
+			productName = StreamVideo;
+		};
+		82765F642C47D08200A2B0FD /* StreamVideoSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82765F612C47D08200A2B0FD /* XCRemoteSwiftPackageReference "stream-video-swift-spm" */;
+			productName = StreamVideoSwiftUI;
+		};
+		82765F662C47D08200A2B0FD /* StreamVideoUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82765F612C47D08200A2B0FD /* XCRemoteSwiftPackageReference "stream-video-swift-spm" */;
+			productName = StreamVideoUIKit;
+		};
+		827BED8C2C47D0D800BE90CE /* StreamChatSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 827BED8B2C47D0D800BE90CE /* XCRemoteSwiftPackageReference "stream-chat-swiftui-spm" */;
+			productName = StreamChatSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 82765F412C47CB4500A2B0FD /* Project object */;
+}

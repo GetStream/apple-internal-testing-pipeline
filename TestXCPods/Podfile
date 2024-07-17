@@ -1,0 +1,16 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '14.0'
+
+name = 'TestXCPods'
+
+workspace name
+
+target name do
+  project "#{name}.xcodeproj"
+  pod 'StreamChat-XCFramework'
+  pod 'StreamChatUI-XCFramework'
+  pod 'StreamChatSwiftUI-XCFramework'
+  pod 'StreamVideo-XCFramework'
+  pod 'StreamVideoSwiftUI-XCFramework'
+  pod 'StreamVideoUIKit-XCFramework'
+end

@@ -1,0 +1,18 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '14.0'
+
+name = 'TestPods'
+branch = 'develop'
+github = 'https://github.com/GetStream'
+
+workspace name
+
+target name do
+  project "#{name}.xcodeproj"
+  pod 'StreamChat', :git => "#{github}/stream-chat-swift.git", :branch => branch
+  pod 'StreamChatUI', :git => "#{github}/stream-chat-swift.git", :branch => branch
+  pod 'StreamChatSwiftUI', :git => "#{github}/stream-chat-swiftui.git", :branch => branch
+  pod 'StreamVideo', :git => "#{github}/stream-video-swift.git", :branch => branch
+  pod 'StreamVideoSwiftUI', :git => "#{github}/stream-video-swift.git", :branch => branch
+  pod 'StreamVideoUIKit', :git => "#{github}/stream-video-swift.git", :branch => branch
+end
