@@ -7,8 +7,8 @@ import StreamChat
 import StreamChatUI
 import StreamChatSwiftUI
 //import StreamVideo
-import StreamVideoSwiftUI
-import StreamVideoUIKit
+//import StreamVideoSwiftUI
+//import StreamVideoUIKit
 
 @main
 struct TestXCPodsApp: App {
