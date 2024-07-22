@@ -21,8 +21,8 @@ jobs:
         include:
           - project: 'TestFrameworks'
           - project: 'TestPods'
-          # - project: 'TestXCFrameworks' # Waiting for releases of
-          # - project: 'TestXCPods' # StreamVideo and StreamChatSwiftUI
+          - project: 'TestXCFrameworks'
+          - project: 'TestXCPods'
       fail-fast: false
     runs-on: macos-14
     env:
