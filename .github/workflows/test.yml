@@ -24,7 +24,7 @@ jobs:
           - project: 'TestXCFrameworks'
           - project: 'TestXCPods'
       fail-fast: false
-    runs-on: macos-13
+    runs-on: macos-14
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
