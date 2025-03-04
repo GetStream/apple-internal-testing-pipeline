@@ -2,7 +2,7 @@
 
 __[Stream Chat SDKs](https://getstream.io/chat/docs/)__ are the official SDKs for [Stream Chat](https://getstream.io/chat/), a service for building chat and messaging applications.
 
-__[Stream Video SDKs](https://getstream.io/video/docs/)__ are the official SDKs for [Stream Video](https://getstream.io/video/), a service for building video calls, audio rooms, and live-streaming applications
+__[Stream Video SDKs](https://getstream.io/video/docs/)__ are the official SDKs for [Stream Video](https://getstream.io/video/), a service for building video calls, audio rooms, and live-streaming applications.
 
 Please refer to the main repositories for more information:
 
