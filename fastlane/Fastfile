@@ -1,7 +1,7 @@
 default_platform :ios
 skip_docs
 
-before_all do |lane|
+before_all do
   setup_ci if is_ci
 end
 
