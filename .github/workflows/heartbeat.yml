@@ -1,0 +1,27 @@
+name: Heartbeat
+
+on:
+  schedule:
+    # Runs on the 1st day of every month at 03:00 UTC
+    - cron: '0 3 1 * *'
+
+  workflow_dispatch:
+
+jobs:
+  heartbeat:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure git
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+      - name: Create empty commit
+        run: |
+          git commit --allow-empty -m "heartbeat: keep actions scheduled"
+          git push origin main
