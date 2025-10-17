@@ -373,7 +373,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/GetStream/stream-chat-swift";
 			requirement = {
-				branch = develop;
+				branch = "ci/resolve-binary-size-bloat";
 				kind = branch;
 			};
 		};
