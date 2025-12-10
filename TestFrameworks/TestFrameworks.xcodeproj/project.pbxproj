@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		825FDEED2EE9EA6400397528 /* StreamFeeds in Frameworks */ = {isa = PBXBuildFile; productRef = 825FDEEC2EE9EA6400397528 /* StreamFeeds */; };
 		82C3506B2C47C0C700204222 /* TestFrameworksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3506A2C47C0C700204222 /* TestFrameworksApp.swift */; };
 		82C3506D2C47C0C700204222 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3506C2C47C0C700204222 /* ContentView.swift */; };
 		82C3506F2C47C0C800204222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C3506E2C47C0C800204222 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 				82C350822C47C25B00204222 /* StreamVideo in Frameworks */,
 				82C350842C47C25B00204222 /* StreamVideoSwiftUI in Frameworks */,
 				82C3507A2C47C1DE00204222 /* StreamChat in Frameworks */,
+				825FDEED2EE9EA6400397528 /* StreamFeeds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +104,7 @@
 				82C350812C47C25B00204222 /* StreamVideo */,
 				82C350832C47C25B00204222 /* StreamVideoSwiftUI */,
 				82C350852C47C25B00204222 /* StreamVideoUIKit */,
+				825FDEEC2EE9EA6400397528 /* StreamFeeds */,
 			);
 			productName = TestFrameworks;
 			productReference = 82C350672C47C0C700204222 /* TestFrameworks.app */;
@@ -135,6 +138,7 @@
 				82C350782C47C1DE00204222 /* XCRemoteSwiftPackageReference "stream-chat-swift" */,
 				82C3507D2C47C21100204222 /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */,
 				82C350802C47C25B00204222 /* XCRemoteSwiftPackageReference "stream-video-swift" */,
+				825FDEEB2EE9EA6400397528 /* XCRemoteSwiftPackageReference "stream-feeds-swift" */,
 			);
 			productRefGroup = 82C350682C47C0C700204222 /* Products */;
 			projectDirPath = "";
@@ -369,6 +373,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		825FDEEB2EE9EA6400397528 /* XCRemoteSwiftPackageReference "stream-feeds-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/stream-feeds-swift";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
 		82C350782C47C1DE00204222 /* XCRemoteSwiftPackageReference "stream-chat-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/GetStream/stream-chat-swift";
@@ -396,6 +408,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		825FDEEC2EE9EA6400397528 /* StreamFeeds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 825FDEEB2EE9EA6400397528 /* XCRemoteSwiftPackageReference "stream-feeds-swift" */;
+			productName = StreamFeeds;
+		};
 		82C350792C47C1DE00204222 /* StreamChat */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 82C350782C47C1DE00204222 /* XCRemoteSwiftPackageReference "stream-chat-swift" */;
