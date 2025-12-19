@@ -171,6 +171,8 @@ GEM
       xcodeproj (>= 1.13.0, < 2.0.0)
       xcpretty (~> 0.4.0)
       xcpretty-travis-formatter (>= 0.0.3, < 2.0.0)
+    fastlane-plugin-stream_actions (0.3.101)
+      xctest_list (= 1.2.1)
     fastlane-sirp (1.0.0)
       sysrandom (~> 1.0)
     ffi (1.17.1)
@@ -289,6 +291,7 @@ GEM
       rouge (~> 3.28.0)
     xcpretty-travis-formatter (1.0.1)
       xcpretty (~> 0.2, >= 0.0.7)
+    xctest_list (1.2.1)
 
 PLATFORMS
   ruby
@@ -296,6 +299,7 @@ PLATFORMS
 DEPENDENCIES
   cocoapods
   fastlane
+  fastlane-plugin-stream_actions (= 0.3.101)
 
 BUNDLED WITH
    2.3.26

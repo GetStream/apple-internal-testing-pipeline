@@ -2,7 +2,11 @@ default_platform :ios
 skip_docs
 
 before_all do
-  setup_ci if is_ci
+  if is_ci
+    setup_ci
+    setup_git_config
+    select_xcode(version: '26.1.1')
+  end
 end
 
 lane :test do |options|
