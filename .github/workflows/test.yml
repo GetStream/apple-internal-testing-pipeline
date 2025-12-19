@@ -38,13 +38,12 @@ jobs:
     name: Slack Report
     runs-on: ubuntu-latest
     needs: [integration]
-    if: failure() && github.event_name == 'schedule'
+    if: failure()
     steps:
       - uses: 8398a7/action-slack@v3
         with:
-          status: cancelled
-          text: "You shall not pass!"
-          job_name: "${{ github.workflow }}: ${{ github.job }}"
+          status: ${{ job.status }}
+          text: "⚠️ <!subteam^S030AAHLDLN>, the integration testing pipeline failed."
           fields: repo,commit,author,workflow
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_NIGHTLY_CHECKS }}
