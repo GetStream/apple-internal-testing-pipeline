@@ -42,7 +42,7 @@ jobs:
     steps:
       - uses: 8398a7/action-slack@v3
         with:
-          status: ${{ job.status }}
+          status: failure
           text: "⚠️ <!subteam^S030AAHLDLN>, the integration testing pipeline failed."
           fields: repo,commit,author,workflow
         env:
