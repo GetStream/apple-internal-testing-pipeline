@@ -5,7 +5,7 @@ before_all do
   if is_ci
     setup_ci
     setup_git_config
-    select_xcode(version: '26.1.1')
+    select_xcode(version: '26.2')
   end
 end
 
