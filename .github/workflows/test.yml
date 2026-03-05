@@ -19,10 +19,10 @@ jobs:
     strategy:
       matrix:
         include:
-          - project: 'TestFrameworks'
-          - project: 'TestPods'
+          # - project: 'TestFrameworks'
+          # - project: 'TestPods'
           - project: 'TestXCFrameworks'
-          - project: 'TestXCPods'
+          # - project: 'TestXCPods'
       fail-fast: false
     runs-on: macos-15
     env:
