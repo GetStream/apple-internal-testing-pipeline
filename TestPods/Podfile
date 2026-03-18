@@ -2,17 +2,18 @@
 platform :ios, '14.0'
 
 name = 'TestPods'
-branch = 'develop'
+branch_chat = 'v4'
+branch_video = 'develop'
 github = 'https://github.com/GetStream'
 
 workspace name
 
 target name do
   project "#{name}.xcodeproj"
-  pod 'StreamChat', :git => "#{github}/stream-chat-swift.git", :branch => branch
-  pod 'StreamChatUI', :git => "#{github}/stream-chat-swift.git", :branch => branch
-  pod 'StreamChatSwiftUI', :git => "#{github}/stream-chat-swiftui.git", :branch => branch
-  pod 'StreamVideo', :git => "#{github}/stream-video-swift.git", :branch => branch
-  pod 'StreamVideoSwiftUI', :git => "#{github}/stream-video-swift.git", :branch => branch
-  pod 'StreamVideoUIKit', :git => "#{github}/stream-video-swift.git", :branch => branch
+  pod 'StreamChat', :git => "#{github}/stream-chat-swift.git", :branch => branch_chat
+  pod 'StreamChatUI', :git => "#{github}/stream-chat-swift.git", :branch => branch_chat
+  pod 'StreamChatSwiftUI', :git => "#{github}/stream-chat-swiftui.git", :branch => branch_chat
+  pod 'StreamVideo', :git => "#{github}/stream-video-swift.git", :branch => branch_video
+  pod 'StreamVideoSwiftUI', :git => "#{github}/stream-video-swift.git", :branch => branch_video
+  pod 'StreamVideoUIKit', :git => "#{github}/stream-video-swift.git", :branch => branch_video
 end

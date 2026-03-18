@@ -8,6 +8,11 @@ on:
   pull_request:
 
   workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Dependencies branch (optional)'
+        required: false
+        type: string
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -30,6 +35,9 @@ jobs:
     steps:
     - uses: actions/checkout@v4.1.1
     - uses: ./.github/actions/ruby-cache
+    - name: Switch dependencies branch
+      if: inputs.branch != '' && matrix.project == 'TestFrameworks'
+      run: bundle exec fastlane switch_chat_spm_branch branch:"${{ inputs.branch }}" project:"${{ matrix.project }}"
     - name: Test Integration of Stream ${{ matrix.project }}
       run: bundle exec fastlane test project:"${{ matrix.project }}"
       timeout-minutes: 30

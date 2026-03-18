@@ -39,3 +39,16 @@ lane :test_spm do |options|
     clean: true
   )
 end
+
+lane :switch_chat_spm_branch do |options|
+  branch = options[:branch] || UI.user_error!('Branch is required')
+
+  project = 'TestFrameworks'
+  UI.message("[#{project}] Setting up Chat SPM branches to #{branch}")
+  pbxproj_path = File.expand_path("../#{project}/#{project}.xcodeproj/project.pbxproj")
+  content = File.read(pbxproj_path)
+  content.gsub!(/(XCRemoteSwiftPackageReference "stream-chat-swift"[^}]*branch = )develop(;)/m, "\\1#{branch}\\2")
+  content.gsub!(/(XCRemoteSwiftPackageReference "stream-chat-swiftui"[^}]*branch = )develop(;)/m, "\\1#{branch}\\2")
+  File.write(pbxproj_path, content)
+  UI.success("[#{project}] Chat SPM branches set to #{branch}")
+end

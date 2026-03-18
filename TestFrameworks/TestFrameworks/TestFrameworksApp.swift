@@ -5,6 +5,7 @@
 import SwiftUI
 import StreamChat
 import StreamChatUI
+import StreamChatCommonUI
 import StreamChatSwiftUI
 import StreamFeeds
 import StreamVideo
