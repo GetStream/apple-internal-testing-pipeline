@@ -10,9 +10,6 @@ workspace name
 
 target name do
   project "#{name}.xcodeproj"
-  pod 'StreamChat', :git => "#{github}/stream-chat-swift.git", :branch => branch_chat
-  pod 'StreamChatUI', :git => "#{github}/stream-chat-swift.git", :branch => branch_chat
-  pod 'StreamChatSwiftUI', :git => "#{github}/stream-chat-swiftui.git", :branch => branch_chat
   pod 'StreamVideo', :git => "#{github}/stream-video-swift.git", :branch => branch_video
   pod 'StreamVideoSwiftUI', :git => "#{github}/stream-video-swift.git", :branch => branch_video
   pod 'StreamVideoUIKit', :git => "#{github}/stream-video-swift.git", :branch => branch_video

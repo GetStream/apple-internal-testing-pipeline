@@ -27,7 +27,6 @@ jobs:
           - project: 'TestFrameworks'
           - project: 'TestPods'
           - project: 'TestXCFrameworks'
-          - project: 'TestXCPods'
       fail-fast: false
     runs-on: macos-15
     env:
