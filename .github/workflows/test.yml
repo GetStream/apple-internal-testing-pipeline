@@ -54,7 +54,7 @@ jobs:
       - uses: 8398a7/action-slack@v3
         with:
           status: failure
-          text: "⚠️ <!subteam^S030AAHLDLN>, the integration testing pipeline failed."
+          text: "⚠️ The integration testing pipeline failed."
           fields: repo,commit,author,workflow
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_NIGHTLY_CHECKS }}
