@@ -43,7 +43,7 @@ end
 lane :switch_chat_spm_branch do |options|
   branch = options[:branch] || UI.user_error!('Branch is required')
 
-  project = 'TestFrameworks'
+  project = options[:project] || UI.user_error!('Project is required')
   UI.message("[#{project}] Setting up Chat SPM branches to #{branch}")
   pbxproj_path = File.expand_path("../#{project}/#{project}.xcodeproj/project.pbxproj")
   content = File.read(pbxproj_path)

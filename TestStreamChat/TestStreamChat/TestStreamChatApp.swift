@@ -3,16 +3,13 @@
 //
 
 import SwiftUI
-import StreamCore
+import StreamChat
+import StreamChatUI
 import StreamChatCommonUI
-import StreamChatSwiftUI
-import StreamFeeds
-import StreamVideo
-import StreamVideoSwiftUI
-import StreamVideoUIKit
+import StreamCore
 
 @main
-struct TestFrameworksApp: App {
+struct TestStreamChatApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

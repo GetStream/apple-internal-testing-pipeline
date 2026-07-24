@@ -29,6 +29,7 @@ jobs:
       matrix:
         include:
           - project: 'TestFrameworks'
+          - project: 'TestStreamChat'
           - project: 'TestPods'
           - project: 'TestXCFrameworks'
       fail-fast: false
@@ -39,7 +40,7 @@ jobs:
     - uses: actions/checkout@v4.1.1
     - uses: ./.github/actions/ruby-cache
     - name: Switch dependencies branch
-      if: inputs.branch != '' && matrix.project == 'TestFrameworks'
+      if: inputs.branch != '' && (matrix.project == 'TestFrameworks' || matrix.project == 'TestStreamChat')
       run: bundle exec fastlane switch_chat_spm_branch branch:"${{ inputs.branch }}" project:"${{ matrix.project }}"
     - name: Test Integration of Stream ${{ matrix.project }}
       run: bundle exec fastlane test project:"${{ matrix.project }}"

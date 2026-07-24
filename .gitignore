@@ -9,6 +9,7 @@
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 Package.resolved
 TestFrameworks.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
+TestStreamChat.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
 TestXCFrameworks.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
 TestPods.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
 TestXCPods.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
