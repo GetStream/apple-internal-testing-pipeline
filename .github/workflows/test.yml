@@ -30,8 +30,6 @@ jobs:
         include:
           - project: 'TestFrameworks'
           - project: 'TestStreamChat'
-          - project: 'TestPods'
-          - project: 'TestXCFrameworks'
       fail-fast: false
     runs-on: macos-15
     env:

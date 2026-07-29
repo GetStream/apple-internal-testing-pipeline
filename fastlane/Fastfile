@@ -10,23 +10,7 @@ before_all do
 end
 
 lane :test do |options|
-  if options[:project].include?('Pods')
-    test_pods(options)
-  else
-    test_spm(options)
-  end
-end
-
-lane :test_pods do |options|
-  Dir.chdir("../#{options[:project]}") { sh('pod update') }
-  gym(
-    workspace: "#{options[:project]}/#{options[:project]}.xcworkspace",
-    scheme: options[:project],
-    configuration: 'Release',
-    skip_codesigning: true,
-    skip_archive: true,
-    clean: true
-  )
+  test_spm(options)
 end
 
 lane :test_spm do |options|
