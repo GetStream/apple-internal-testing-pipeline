@@ -24,6 +24,25 @@ lane :test_spm do |options|
   )
 end
 
+lane :switch_spm_release_versions do |options|
+  sdk = options[:sdk] || UI.user_error!('SDK is required')
+  version = options[:version] || UI.user_error!('Version is required')
+  project = options[:project] || UI.user_error!('Project is required')
+
+  pbxproj_path = File.expand_path("../#{project}/#{project}.xcodeproj/project.pbxproj")
+  content = File.read(pbxproj_path)
+  content.scan(/XCRemoteSwiftPackageReference "([\w-]+)"/).flatten.uniq.each do |package|
+    package_version = package == sdk ? version : sh("gh api repos/GetStream/#{package}/releases/latest --jq .tag_name").strip
+    UI.message("[#{project}] Pinning #{package} to #{package_version}")
+    content.gsub!(
+      /(XCRemoteSwiftPackageReference "#{package}"[^}]*requirement = \{)[^}]*(\})/m,
+      "\\1\n\t\t\t\tkind = exactVersion;\n\t\t\t\tversion = #{package_version};\n\t\t\t\\2"
+    )
+  end
+  File.write(pbxproj_path, content)
+  UI.success("[#{project}] SPM dependencies pinned to release versions")
+end
+
 lane :switch_chat_spm_branch do |options|
   branch = options[:branch] || UI.user_error!('Branch is required')
 

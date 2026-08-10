@@ -13,6 +13,14 @@ on:
         description: 'Dependencies branch (optional)'
         required: false
         type: string
+      sdk:
+        description: 'SDK that was just released, e.g. stream-chat-swift (optional, requires version)'
+        required: false
+        type: string
+      version:
+        description: 'Exact released version of the sdk; other SDKs resolve to their latest release (optional, requires sdk)'
+        required: false
+        type: string
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -40,6 +48,9 @@ jobs:
     - name: Switch dependencies branch
       if: inputs.branch != '' && (matrix.project == 'TestFrameworks' || matrix.project == 'TestStreamChat')
       run: bundle exec fastlane switch_chat_spm_branch branch:"${{ inputs.branch }}" project:"${{ matrix.project }}"
+    - name: Pin dependencies to release versions
+      if: inputs.version != ''
+      run: bundle exec fastlane switch_spm_release_versions sdk:"${{ inputs.sdk }}" version:"${{ inputs.version }}" project:"${{ matrix.project }}"
     - name: Test Integration of Stream ${{ matrix.project }}
       run: bundle exec fastlane test project:"${{ matrix.project }}"
       timeout-minutes: 30
