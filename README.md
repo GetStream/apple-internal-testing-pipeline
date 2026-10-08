@@ -15,4 +15,4 @@ Please refer to the main repositories for more information:
 
 # Integration Test
 
-This repository is used internally to verify the integration of [StreamChat](https://github.com/GetStream/stream-chat-swift) (LLC, UIKit, SwiftUI), [StreamVideo](https://github.com/GetStream/stream-video-swift) (LLC, UIKit, SwiftUI) and [StreamFeeds](https://github.com/GetStream/stream-feeds-swift) (LLC) SDKs and XCFrameworks via Swift Package Manager and CocoaPods dependency managers.
+This repository is used internally to verify the integration of [StreamChat](https://github.com/GetStream/stream-chat-swift) (LLC, UIKit, SwiftUI, AI), [StreamVideo](https://github.com/GetStream/stream-video-swift) (LLC, UIKit, SwiftUI) and [StreamFeeds](https://github.com/GetStream/stream-feeds-swift) (LLC) SDKs and XCFrameworks via Swift Package Manager and CocoaPods dependency managers.
