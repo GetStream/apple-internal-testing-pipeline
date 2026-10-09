@@ -37,20 +37,16 @@ jobs:
       matrix:
         include:
           - project: 'TestFrameworks'
-            runner: 'macos-15'
-            xcode: '26.2'
+            runner: 'macos-27'
           - project: 'TestStreamChat'
-            runner: 'macos-15'
-            xcode: '26.2'
-          # Building StreamChatAI through SPM needs Xcode 27
+            runner: 'macos-27'
           - project: 'TestStreamChatAI'
-            runner: 'xcode-27'
-            xcode: '27.0'
+            runner: 'macos-27'
       fail-fast: false
     runs-on: ${{ matrix.runner }}
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      XCODE_VERSION: ${{ matrix.xcode }}
+      XCODE_VERSION: '27.1'
     steps:
     - uses: actions/checkout@v4.1.1
     - uses: ./.github/actions/ruby-cache
