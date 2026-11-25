@@ -43,7 +43,7 @@ jobs:
           - project: 'TestStreamChatAI'
             runner: 'macos-27'
       fail-fast: false
-    runs-on: ${{ matrix.runner }}
+    runs-on: { group: scaleway-macos }
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       XCODE_VERSION: '27.1'
